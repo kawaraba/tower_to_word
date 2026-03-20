@@ -45,23 +45,27 @@ header {
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  table-layout: fixed;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background: #fff;
-}
-
-th:first-child,
-td:first-child {
+th:nth-child(1),
+td:nth-child(1) {
   width: 60px;
-  padding: 4px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 200px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 100px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 120px;
 }
 
 .char-img {
