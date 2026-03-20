@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>キャラクター一覧</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f6f7;
-    }
+<meta charset="UTF-8">
+<title>キャラクター一覧</title>
 
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 15px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f7;
+}
 
-    .container {
-      display: flex;
-    }
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+}
 
-    .sidebar {
-      width: 250px;
-      background: #34495e;
-      color: white;
-      min-height: 100vh;
-      padding: 15px;
-    }
+.container {
+  display: flex;
+}
 
-    .sidebar a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      padding: 8px 0;
-    }
+.sidebar {
+  width: 250px;
+  background: #34495e;
+  color: white;
+  min-height: 100vh;
+  padding: 15px;
+}
 
-    .main {
-      flex: 1;
-      padding: 20px;
-    }
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 15px;
-    }
+.main {
+  flex: 1;
+  padding: 20px;
+}
 
-    .card {
-      background: white;
-      border-radius: 5px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
 
-    .card img {
-      width: 150px;
-      height: 150px;
-      object-fit: fill;
-      background: #fff;
-    }
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
 
-    .card a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      display: block;
-      margin-top: 5px;
-    }
-  </style>
+th {
+  background: #ecf0f1;
+}
+
+/* 行ごとに色分け */
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* 画像 */
+.char-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* リンク装飾 */
+a.char-link {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+a.char-link:hover {
+  text-decoration: underline;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>キャラクター一覧</header>
@@ -81,18 +96,33 @@
   </div>
 
   <div class="main">
+
     <h2>キャラクター一覧</h2>
 
-    <div class="grid">
-      
-      <div class="card">
-        <a href="cranberry_detail.html" style="text-decoration: none; color: black;">
- 　　　　 <img src="images/クランベリー顔.png" alt=""クランベリー形態素">
-  　　　　<p>クランベリー形態素</p>
-        </a>
-      </div>
+    <table>
+      <tr>
+        <th>画像</th>
+        <th>名前</th>
+        <th>レアリティ</th>
+        <th>役割</th>
+      </tr>
 
-    </div>
+      <tr>
+        <td><img src="images/クランベリー顔.png" class="char-img"></td>
+        <td><a href="cranberry_detail.html" class="char-link">クランベリー形態素</a></td>
+        <td>SSR</td>
+        <td>アタッカー</td>
+      </tr>
+
+      <tr>
+        <td><img src="images/characters/char2.png" class="char-img"></td>
+        <td><a href="char2.html" class="char-link">サンプルキャラB</a></td>
+        <td>★★★★</td>
+        <td>サポーター</td>
+      </tr>
+
+    </table>
+
   </div>
 
 </div>
