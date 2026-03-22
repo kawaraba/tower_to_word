@@ -1,19 +1,26 @@
+/* ===== 全体 ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f5f6f7;
+  color: #333;
 }
 
+/* ===== ヘッダー ===== */
 header {
   background: #2c3e50;
   color: white;
-  padding: 15px;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
+/* ===== レイアウト ===== */
 .container {
   display: flex;
 }
 
+/* ===== サイドバー ===== */
 .sidebar {
   width: 220px;
   background: #34495e;
@@ -26,36 +33,109 @@ header {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 6px 0;
+  padding: 8px 5px;
+  border-radius: 4px;
 }
 
+.sidebar a:hover {
+  background: #3d566e;
+}
+
+/* ===== メイン ===== */
 .main {
   flex: 1;
   background: white;
   padding: 20px;
 }
 
-/* テーブル */
+/* ===== 見出し ===== */
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ===== テーブル（攻略サイト風） ===== */
 table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  background: white;
 }
 
 th, td {
   border: 1px solid #ccc;
   padding: 8px;
+  text-align: left;
 }
 
+/* 見出し */
 th {
   background: #ecf0f1;
+  font-weight: bold;
 }
 
+/* 交互に色 */
 tr:nth-child(even) {
   background: #fafafa;
 }
 
+/* ホバー */
+tr:hover {
+  background: #eaf2f8;
+}
+
+/* ===== 列幅調整 ===== */
+th:nth-child(1), td:nth-child(1) { width: 60px; }
+th:nth-child(2), td:nth-child(2) { width: 200px; }
+th:nth-child(3), td:nth-child(3) { width: 100px; }
+th:nth-child(4), td:nth-child(4) { width: 120px; }
+
+/* ===== 画像 ===== */
 .char-img {
   width: 40px;
   height: 40px;
+  object-fit: cover;
+}
+
+/* ===== リンク ===== */
+a {
+  color: #2c3e50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== カード（詳細ページ用） ===== */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+/* ===== ステータス表（詳細ページ） ===== */
+.status-table th {
+  width: 120px;
+  background: #ecf0f1;
+}
+
+/* ===== レア度色分け ===== */
+.rarity-5 { color: gold; font-weight: bold; }
+.rarity-4 { color: purple; }
+.rarity-3 { color: #3498db; }
+
+/* ===== スマホ対応（最低限） ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  table {
+    font-size: 12px;
+  }
 }
