@@ -1,1 +1,25 @@
+<link rel="stylesheet" href="../style.css">
 
+<header>イベント詳細</header>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../index.html">トップ</a>
+    <a href="../characters.html">イベント一覧</a>
+  </div>
+
+  <div class="main">
+
+    <h2>イベント　</h2>
+    <img src="../images/char1.png" width="200">
+
+    <table>
+      <tr><th>期間</th><td>2026/XX/XX</td></tr>
+    　
+    </table>
+
+    <h3>説明</h3>
+    <p>ここに説明を書く</p>
+
+  </div>
+</div>
