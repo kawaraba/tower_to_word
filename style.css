@@ -55,10 +55,11 @@ h1, h2, h3 {
 
 /* ===== テーブル（攻略サイト風） ===== */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  background: white;
+  table-layout: auto;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  width: 60px; /* 画像だけ固定 */
 }
 
 th, td {
