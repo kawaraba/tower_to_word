@@ -1,16 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>トップページ</title>
 <link rel="stylesheet" href="style.css">
 
-<header>言想高塔 攻略wiki</header>
+<style>
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  border-left: 5px solid #2c3e50;
+  padding-left: 10px;
+}
+
+/* カード風リンク */
+.card-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card-link {
+  display: block;
+  width: 200px;
+  background: #ecf0f1;
+  padding: 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  border-radius: 5px;
+}
+
+.card-link:hover {
+  background: #d0d7de;
+}
+
+/* 更新情報 */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>攻略サイト風ポートフォリオ</header>
 
 <div class="container">
-  <div class="sidebar">
-    <a href="index.html">トップ</a>
-    <a href="characters.html">キャラ一覧</a>
-    <a href="events.html">イベント一覧</a>
+
+<!-- サイドバー -->
+<div class="sidebar">
+  <a href="index.html">トップ</a>
+  <a href="characters.html">キャラ一覧</a>
+  <a href="events.html">イベント一覧</a>
+</div>
+
+<!-- メイン -->
+<div class="main">
+
+  <!-- ■ 概要 -->
+  <div class="section">
+    <h2>サイト概要</h2>
+    <p>
+      このサイトはゲーム攻略Wiki風のポートフォリオです。<br>
+      キャラクターやイベント情報をまとめています。
+    </p>
   </div>
 
-  <div class="main">
-    <h2>トップページ</h2>
-    <p>ここに概要を書く</p>
+  <!-- ■ 更新情報 -->
+  <div class="section">
+    <h2>更新情報</h2>
+    <ul class="news-list">
+      <li>2026-03-23：キャラAを追加</li>
+      <li>2026-03-22：サイト公開</li>
+    </ul>
   </div>
+
+  <!-- ■ キャラ一覧導線 -->
+  <div class="section">
+    <h2>キャラクター</h2>
+    <div class="card-list">
+
+      <a href="characters.html" class="card-link">
+        キャラ一覧を見る
+      </a>
+
+      <a href="characters/char1.html" class="card-link">
+        ピックアップ：キャラA
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ■ イベント導線 -->
+  <div class="section">
+    <h2>イベント</h2>
+    <div class="card-list">
+
+      <a href="events.html" class="card-link">
+        イベント一覧を見る
+      </a>
+
+      <a href="events/event1.html" class="card-link">
+        最新イベント
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ■ ピックアップ -->
+  <div class="section">
+    <h2>ピックアップ</h2>
+    <p>
+      注目キャラやおすすめ記事をここに掲載
+    </p>
+  </div>
+
 </div>
+</div>
+
+</body>
+</html>
