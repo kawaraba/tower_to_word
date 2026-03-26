@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../style.css">
+
+<header>イベント詳細</header>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../index.html">トップ</a>
+    <a href="../characters.html">キャラ一覧</a>
+    <a href="../events.html">イベント一覧</a>
+  </div>
+
+  <div class="main">
+
+    <h2>イベント　</h2>
+    <img src="../images/基礎から始めるバーバル学園！.png" width="400">
+
+    <table>
+      <tr><th>期間</th><td>2026/XX/XX～2026/XX/XX</td></tr>
+    　
+    </table>
+
+    <h3>説明</h3>
+    <p>ここに説明を書く</p>
+
+  </div>
+</div>
