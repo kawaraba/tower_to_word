@@ -97,30 +97,36 @@
 　　  </div>
 
  　　 <div class="tab-content active">
-   　　 <p><strong>ノーマルスキル：</strong>「無意味なんかじゃないもん！」</p>
-   　　 <p>敵1人に対して攻撃力の150%分のダメージを与える。（CT 30秒）</p>
+   　　 <p><strong>S01</strong></p>
+   　　 <p></p>
 　　  </div>
-
 　　  <div class="tab-content">
- 　　   <p><strong>S01</strong></p>
-  　　  <p>戦闘開始時に自身のHPの200%分のダメージを無効化するシールドを獲得し、シールドが存在している間、自身の攻撃力が35%上昇</p>
+ 　　   <p><strong>S02</strong></p>
+  　　  <p></p>
  　　 </div>
-
 　　  <div class="tab-content">
-  　　  <p><strong>S02</strong></p>
-   　　 <p>周囲にいる敵5体に対し、全員に攻撃力の325%分のダメージを与える。自身の左右のマスに味方がいない場合、追加で攻撃力の25%分のダメージを与える。</p>
- 　　 </div>
-      <div class="tab-content">
   　　  <p><strong>S03</strong></p>
-   　　 <p>周囲にいる敵5体に対し、全員に攻撃力の325%分のダメージを与える。自身の左右のマスに味方がいない場合、追加で攻撃力の25%分のダメージを与える。</p>
+   　　 <p></p>
  　　 </div>
       <div class="tab-content">
-  　　  <p><strong>必殺スキル：</strong>「ひとりでも寂しくなーい！」</p>
-   　　 <p>周囲にいる敵5体に対し、全員に攻撃力の325%分のダメージを与える。自身の左右のマスに味方がいない場合、追加で攻撃力の25%分のダメージを与える。</p>
+  　　  <p><strong>S04</strong></p>
+   　　 <p></p>
  　　 </div>
       <div class="tab-content">
-  　　  <p><strong>必殺スキル：</strong>「ひとりでも寂しくなーい！」</p>
-   　　 <p>周囲にいる敵5体に対し、全員に攻撃力の325%分のダメージを与える。自身の左右のマスに味方がいない場合、追加で攻撃力の25%分のダメージを与える。</p>
+  　　  <p><strong>S05</strong></p>
+   　　 <p></p>
+ 　　 </div>
+      <div class="tab-content">
+  　　  <p><strong>S06</strong></p>
+   　　 <p></p>
+ 　　 </div>
+      <div class="tab-content">
+  　　  <p><strong>S07</strong></p>
+   　　 <p></p>
+ 　　 </div>
+      <div class="tab-content">
+  　　  <p><strong>S08</strong></p>
+   　　 <p></p>
  　　 </div>
 
 　　</div>
@@ -131,4 +137,18 @@
   </div>
 </div>
 
+<script>
+function openTab(index) {
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(t => t.classList.remove("active"));
+  contents.forEach(c => c.classList.remove("active"));
+
+  tabs[index].classList.add("active");
+  contents[index].classList.add("active");
+}
+</script>
+
 </body>
+</html>
