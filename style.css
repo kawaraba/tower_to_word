@@ -133,6 +133,11 @@ a:hover {
   background: #ecf0f1;
 }
 
+.shop-table th {
+  width: 120px;
+  background: #ecf0f1;
+}
+
 /* ===== レア度色分け ===== */
 .rarity-5 { color: gold; font-weight: bold; }
 .rarity-4 { color: purple; }
