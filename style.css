@@ -148,8 +148,8 @@ a:hover {
 
 /* ===== レア度色分け ===== */
 .rarity-5 { color: gold; font-weight: bold; }
-.rarity-4 { color: purple; }
-.rarity-3 { color: #3498db; }
+.rarity-4 { color: purple; font-weight: bold; }
+.rarity-3 { color: #3498db; font-weight: bold; }
 
 /* ===== スマホ対応（最低限） ===== */
 @media (max-width: 768px) {
